@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Law Firm</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="./assets/Screenshot 2024-09-09 231114.png" type="image/x-icon">
+
+ 
+  
+</head>
+<body>
+    <!-------------------------------- Navbar --------------------------------->
+
+    <nav class="bg-[#152527] p-4 sticky top-0 z-50 shadow-2xl" id="home">
+      <div class="container mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <a href="index.html" class="text-white text-2xl font-bold transform transition hover:scale-105 duration-300">
+              <img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="">
+          </a>
+  
+          <!-- Desktop Menu (centered) -->
+          <div class="hidden md:flex flex-1 justify-center space-x-8 mr-8">
+              <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+              <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+              <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+              <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+              <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+          </div>
+  
+          <!-- Gradient Button -->
+          <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 mr-8 transform hover:scale-105 shadow-md">
+              Contact
+          </a>
+  
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white" id="menu-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+          </button>
+      </div>
+  
+      <!-- Mobile Menu -->
+      <div class="hidden md:hidden" id="mobile-menu">
+          <div class="flex flex-col space-y-2 mt-2">
+              <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+              <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+              <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+              <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+              <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+          </div>
+      </div>
+  </nav>
+
+<!-- -------------------------- Hero Banner --------------------------------->  
+<section class="h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('https://img.freepik.com/free-photo/view-3d-gavel-lawyer-s-day_23-2151023395.jpg?semt=ais_hybrid');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10 text-center text-white">
+    <h1 class="text-4xl font-bold sm:text-7xl mb-4 " data-aos="fade-up" data-aos-duration="1000">Justice & Legal Services</h1>
+    <p class="text-xl mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Professional legal support to ensure justice and fairness</p>
+
+    <!-- Gradient Button -->
+    <a href="#" class=" md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300 transition duration-300 mr-8 transform transition hover:scale-105 duration-300 shadow-lg shadow-[#B7A268]"  >
+     Free Consultation
+    </a>
+  </div>
+</section>
+
+<!------------------------------------- About Us Section -------------------------->
+<section class="py-28 relative overflow-hidden" >
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]">About Us</h2>
+      <p class="mt-4 text-gray-600">We are dedicated to providing the best services in the industry.</p>
+    </div>
+
+    <div class="md:flex md:items-center md:space-x-8">
+      <!-- Image Section -->
+      <div class="md:w-1/2 relative">
+        <img src="https://img.freepik.com/free-photo/grey-marble-column-details-building_1359-886.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="About Us Image" class="rounded-lg brightness-75 z-10 relative" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="https://img.freepik.com/premium-photo/man-shaking-hands-with-document-that-says-word-seal-it_1293074-126243.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Decorative Image 1" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 object-cover rounded-lg rotate-6 z-10">
+        <img src="https://img.freepik.com/free-photo/view-3d-justice-scales_23-2151228148.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Decorative Image 2" class="absolute bottom-0 right-0 w-1/2 h-1/2 object-cover rounded-lg z-20 -rotate-6">
+      </div>
+
+      <!-- Text Section -->
+      <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="text-2xl font-semibold text-[#115e59] mb-4">Our Story</h3>
+        <p class="text-gray-600 mb-4">
+          Founded with a passion for excellence, we strive to deliver top-notch solutions that exceed expectations. Our team is composed of industry experts who are dedicated to innovation and quality.
+        </p>
+        <p class="text-gray-600">
+          Over the years, we have worked with a diverse range of clients, providing custom-tailored services that fit their unique needs. Our commitment to customer satisfaction has made us a trusted name in the industry.
+        </p>
+        
+       <!-- Icons -->
+       <div class="flex justify-left gap-8 mt-8 mb-6">
+         <!-- Button -->
+         <a href="#" class="inline-block mt-2 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 mr-2 ml-0 transform hover:scale-105">
+          Learn More
+        </a>
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 mx-auto text-[#115e59]"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2"></path><path d="M12 22v-2"></path><path d="m17 20.66-1-1.73"></path><path d="M11 10.27 7 3.34"></path><path d="m20.66 17-1.73-1"></path><path d="m3.34 7 1.73 1"></path><path d="M14 12h8"></path><path d="M2 12h2"></path><path d="m20.66 7-1.73 1"></path><path d="m3.34 17 1.73-1"></path><path d="m17 3.34-1 1.73"></path><path d="m11 13.73-4 6.93"></path></svg>
+          <p class="mt-2 text-xs font-medium text-[#115e59]">Innovation</p>
+        </div>
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 mx-auto text-[#115e59]"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <p class="mt-2 text-xs font-medium text-[#115e59]">Teamwork</p>
+        </div>
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 mx-auto text-[#115e59]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="m14.5 9-5 5"></path><path d="m9.5 9 5 5"></path></svg>
+          <p class="mt-2 text-xs font-medium text-[#115e59]">Security</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----------------------------- Team Members Section ------------------------------->
+<section class="bg-gradient-to-r from-[#152527] to-[#17625D] py-28" >
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Meet Our Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Team Member Card -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="https://img.freepik.com/premium-photo/young-indian-businesswoman-employee-standing-white-background_1254992-196959.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 2 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25828.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">Jane Smith</h3>
+        <p class="text-[#B59F65]">Legal Consultant</p>
+        <p class="text-white mt-4">Specialist in property law with over 10 years of experience.</p>
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 3 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img src="https://img.freepik.com/free-photo/photorealistic-lawyer-day-celebration_23-2151053984.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 4 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25849.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-------------------------------------- Services Section --------------------------->
+<section class="bg-gray-100 py-28 "  >
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#115e59] mb-4">Our Legal Services</h2>
+        <div class="w-24 h-1 bg-[#B59F65] mx-auto"></div>
+      </div>
+     
+      <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">We offer a range of legal services to help you navigate your legal challenges with confidence.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Row 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#827851] border-solid border-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/3304/3304229.png" alt="Criminal Defense" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Criminal Defense</h3>
+        <p class="text-gray-600 mb-4">Experienced defense against criminal charges, ensuring your rights are protected throughout the legal process.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/10397/10397984.png" alt="Family Law" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Family Law</h3>
+        <p class="text-gray-600 mb-4">Comprehensive legal services for family matters, including divorce, custody disputes, and more.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/16530/16530742.png" alt="Personal Injury" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Personal Injury</h3>
+        <p class="text-gray-600 mb-4">Advocacy for victims of personal injury accidents, helping you seek fair compensation for your injuries.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/10236/10236389.png" alt="Estate Planning" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Estate Planning</h3>
+        <p class="text-gray-600 mb-4">Guidance on wills, trusts, and estate planning to ensure your assets are managed according to your wishes.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <!-- Row 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/7376/7376352.png" alt="Business Law" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Business Law</h3>
+        <p class="text-gray-600 mb-4">Legal support for business formation, contracts, compliance, and more to help your business thrive.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/11668/11668143.png" alt="Employment Law" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Employment Law</h3>
+        <p class="text-gray-600 mb-4">Assistance with workplace issues, including wrongful termination, discrimination, and employee rights.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/14597/14597286.png" alt="Real Estate Law" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Real Estate Law</h3>
+        <p class="text-gray-600 mb-4">Guidance on real estate transactions, property disputes, and other real estate legal matters.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-2xl hover:border-[#115E5E] border-solid border-2  "  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+        <div class="mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/128/14597/14597286.png" alt="Real Estate Law" class="w-16 h-16 mx-auto text-[#115e59]">
+        </div>
+        <h3 class="text-xl font-semibold text-[#115e59] mb-2">Real Estate Law</h3>
+        <p class="text-gray-600 mb-4">Guidance on real estate transactions, property disputes, and other real estate legal matters.</p>
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300">
+          See More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!------------------------ FAQs Section   -------------------->
+<section class="relative py-28 bg-gray-50"  >
+  <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Left Side Image -->
+    <div class="flex items-center justify-center " data-aos="fade-right" data-aos-duration="1000">
+      <img src="https://img.freepik.com/free-photo/grey-marble-column-details-building_1359-886.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Legal Consultation" class="rounded-lg max-w-full h-auto">
+    </div>
+
+    <!-- Right Side FAQs -->
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]">Frequently Asked Questions</h2>
+        <p class="mt-4 text-gray-600">Find answers to common questions about our services.</p>
+      </div>
+
+      <!-- FAQ Item 1 -->
+      <div class="mb-6 flex items-start space-x-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="https://img.icons8.com/ios-filled/50/115e59/contract.png" class="w-8 h-8" alt="Services Icon" />
+        <div>
+          <button class="flex justify-between items-center w-full text-left font-semibold text-lg text-[#115e59] focus:outline-none">
+            <span>What services do you offer?</span>
+            <svg class="w-5 h-5 text-[#115e59]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mt-3 text-gray-600">
+            We offer a wide range of legal services including corporate law, intellectual property, litigation, and more. Our team of experienced attorneys is dedicated to providing comprehensive legal solutions tailored to your specific needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="mb-6 flex items-start space-x-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="https://img.icons8.com/ios-filled/50/115e59/phone-office.png" class="w-8 h-8" alt="Consultation Icon" />
+        <div>
+          <button class="flex justify-between items-center w-full text-left font-semibold text-lg text-[#115e59] focus:outline-none">
+            <span>How can I schedule a consultation?</span>
+            <svg class="w-5 h-5 text-[#115e59]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mt-3 text-gray-600">
+            Scheduling a consultation is easy. You can either call our office directly, use our online booking system, or fill out the contact form on our website. One of our representatives will get back to you promptly to arrange a suitable time.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="mb-6 flex items-start space-x-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img src="https://img.icons8.com/ios-filled/50/115e59/coins.png" class="w-8 h-8" alt="Fees Icon" />
+        <div>
+          <button class="flex justify-between items-center w-full text-left font-semibold text-lg text-[#115e59] focus:outline-none">
+            <span>What are your fees?</span>
+            <svg class="w-5 h-5 text-[#115e59]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mt-3 text-gray-600">
+            Our fees vary depending on the nature and complexity of your case. We offer transparent pricing and will provide you with a detailed fee structure during your initial consultation. We also offer flexible payment options to suit your needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more FAQ items as needed -->
+
+      <!-- CTA Button -->
+      <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          More Questions? Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!------------------------ Contact Us Section ------------------------------->
+<section   class="mt-8 py-28 relative h-screen/2 bg-fixed bg-cover bg-center" style="background-image: url('https://aipearlz.com/wp-content/uploads/2024/08/people-working-as-team-company-1536x1025.jpg');">
+  <div class="bg-black bg-opacity-60 absolute inset-0"></div> <!-- Overlay for readability -->
+
+  <div class="relative z-10 container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-center h-full">
+   
+    <div class="w-full md:w-1/2 lg:w-2/3 max-w-2xl order-1 md:order-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      <form action="#" method="POST" class="bg-white bg-opacity-90 p-6 md:p-8 rounded-xl">
+        <div class="mb-4 md:mb-6">
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#D4C190] focus:border-transparent placeholder-gray-500 transition duration-300 ease-in-out hover:bg-[#f9f9f9]" placeholder="Your Name" required>
+        </div>
+        <div class="mb-4 md:mb-6">
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#D4C190] focus:border-transparent placeholder-gray-500 transition duration-300 ease-in-out hover:bg-[#f9f9f9]" placeholder="Your Email" required>
+        </div>
+        <div class="mb-4 md:mb-6">
+          <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#D4C190] focus:border-transparent placeholder-gray-500 transition duration-300 ease-in-out hover:bg-[#f9f9f9]" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="flex justify-center">
+          <button type="submit" class="w-full md:w-1/2 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-105">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="mr-auto text-center text-white mb-8 md:mb-0 md:w-1/2 lg:w-1/3 order-2 md:order-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <h2 class="text-3xl md:text-4xl font-bold">Contact Us</h2>
+      <p class="mt-4 text-gray-300">We'd love to hear from you. Send us a message and we'll get back to you as soon as possible!</p>
+    </div>
+  </div>
+</section>
+
+<!------------------------ Testimonials Section   -------------------->
+<section class="relative py-28 "  >
+  <div class="container mx-auto px-6 md:px-12 text-center ">
+    
+    <!-- Section Title -->
+    <div class="mb-12 " data-aos="fade-up" data-aos-duration="1000">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#115e59] mb-4">What Our Clients Say</h2>
+        <div class="w-24 h-1 bg-[#B59F65] mx-auto"></div>
+      </div>
+      <!-- <h2 class="text-4xl font-bold text-[#B59F65] ">What Our Clients Say</h2> -->
+      <p class="mt-4 text-gray-400">See why our clients trust us to handle their most important legal matters.</p>
+    </div>
+
+    <!-- Testimonial Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Testimonial 1 -->
+      <div class=" bg-[#F9FAFB] border-2 border- rounded-lg p-8  shadow-2xl   transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="mx-auto mb-6 h-16 w-16 rounded-full object-cover" src=" https://img.freepik.com/premium-photo/male-worker-wearing-green-yellow-color-kit-isolated-white-background_1029679-144270.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid" alt="Emily Carter">
+        <p class="text-xl text-[#115E59] italic"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus eligendi atque modi commodi labore, dicta repudiandae minus necessitatibus culpa architecto sequi nesciunt voluptate vel dolorum. Porro facere consequuntur commodi!</p>
+        <h3 class="mt-6 text-lg font-semibold text-[#B59F65]">Emily Carter</h3>
+        <p class="text-gray-400">Small Business Owner</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-[#F9FAFB] border-2 border-[ rounded-lg p-8 shadow-2xl   transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="mx-auto mb-6 h-16 w-16 rounded-full object-cover" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid" alt="Emily Carter">
+        <p class="text-xl text-[#115E59] italic"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus blanditiis temporibus ratione minima ducimus dicta quam asperiores fugit nobis repudiandae, itaque sapiente perspiciatis, vel aspernatur deleniti officia voluptates laborum culpa.</p>
+        <h3 class="mt-6 text-lg font-semibold text-[#B59F65]">Emily Carter</h3>
+        <p class="text-gray-400">Small Business Owner</p>
+      </div>
+
+     
+
+    </div>
+
+    <!-- CTA Button -->
+    <div class="mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+      <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+        Read More Reviews
+      </a>
+    </div>
+  </div>
+  
+</section>
+
+<!--------------------------------------------- footer section --------------------------->
+
+<footer class="bg-[#152527] text-white">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 p-8">
+    <!-- Company Logo and Social Links -->
+    <div>
+      <a href="index.html"><img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="Company Logo" class="mb-4 transform transition hover:scale-105 duration-300"></a>
+      <p class="text-sm mb-4">Your Company is committed to delivering the best products and services.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Useful Links</h2>
+      <ul class="space-y-2">
+        <li><a href="about.html" class="hover:text-[#B59F65]">About</a></li>
+        <li><a href="services.html" class="hover:text-[#B59F65]">Services</a></li>
+        <li><a href="team.html" class="hover:text-[#B59F65]">Team</a></li>
+        <li><a href="faqs.html" class="hover:text-[#B59F65]">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Office Info -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Office Info</h2>
+      <ul class="space-y-2">
+        <p class="text-sm hover:text-[#B59F65]">1234 Street Name, City, Country</p>
+        <p class="text-sm hover:text-[#B59F65]">Phone: (123) 456-7890</p>
+        <p class="text-sm hover:text-[#B59F65]">Email: info@yourcompany.com</p>
+      </ul>
+    </div>
+
+    <!-- Subscribe Now -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Subscribe Now</h2>
+      <form>
+        <input type="email" class="w-full p-2 rounded bg-gray-700 text-white mb-2" placeholder="Enter your email">
+        <button type="submit" class="w-full bg-gradient-to-r from-[#B59F65] to-[#D4C190] hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-110 text-white py-2 rounded">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <hr class="mx-12">
+  <div class="mt-8 text-center text-sm text-gray-400 pb-4">
+    &copy; 2024 Your Company. All rights reserved.
+  </div>
+</footer>
+
+ <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="./assets/Screenshot 2024-09-09 231114.png" type="image/x-icon">
+
+</head>
+<body>
+
+      <!-------------------------------- Navbar --------------------------------->
+
+  <nav class="bg-[#152527] p-4 sticky top-0 z-50 shadow-2xl" id="home">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="text-white text-2xl font-bold transform transition hover:scale-105 duration-300">
+            <img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="">
+        </a>
+
+        <!-- Desktop Menu (centered) -->
+        <div class="hidden md:flex flex-1 justify-center space-x-8 mr-8">
+            <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+            <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+            <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+            <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+            <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+        </div>
+
+        <!-- Gradient Button -->
+        <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 mr-8 transform hover:scale-105 shadow-md">
+            Contact
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col space-y-2 mt-2">
+            <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+            <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+            <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+            <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+            <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+        </div>
+    </div>
+</nav>
+
+ 
+
+ <!-- -------------------------- Hero Banner --------------------------------->  
+<section class="h-[60vh] flex items-center justify-center relative bg-cover bg-center" style="background-image: url(' https://img.freepik.com/premium-photo/question-mark-is-black-surface-with-words-question-mark-it_1015874-27457.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-4xl font-bold sm:text-7xl mb-4 " data-aos="fade-up" data-aos-duration="1000">FAQs</h1>
+      <p class="text-xl mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Professional legal support to ensure justice and fairness</p>
+     
+      
+    </div>
+    <hr>
+  </section>
+  
+ 
+ 
+<!-------------------------------------- FAQs Section ---------------------------------------->
+<section class="bg-gray-100 py-16" id="faqs">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h2>
+      <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Find answers to some of the most common questions we receive.</p>
+    </div>
+
+    <div class="flex flex-wrap -mx-4">
+      <!-- FAQ Item 1 -->
+      <div class="w-full md:w-1/2 px-4 mb-8 flex items-center">
+        <div class="flex-shrink-0 w-1/3">
+          <img src="https://img.icons8.com/ios-filled/50/115e59/faq.png" alt="FAQ Icon" class="w-24 h-24 mx-auto">
+        </div>
+        <div class="w-2/3 pl-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-question-circle text-2xl text-[#B59F65] mr-3"></i>
+              <h3 class="text-xl font-semibold text-[#115e59]">What is the purpose of this website?</h3>
+            </div>
+            <p class="text-gray-600">Our website provides information and resources about our legal services, including how to get in touch with us, learn about our team, and understand the areas of law we specialize in.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="w-full md:w-1/2 px-4 mb-8 flex items-center">
+        <div class="flex-shrink-0 w-1/3">
+          <img src="https://img.icons8.com/ios-filled/50/115e59/support.png" alt="Support Icon" class="w-24 h-24 mx-auto">
+        </div>
+        <div class="w-2/3 pl-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-headset text-2xl text-[#B59F65] mr-3"></i>
+              <h3 class="text-xl font-semibold text-[#115e59]">How can I contact support?</h3>
+            </div>
+            <p class="text-gray-600">You can contact our support team through the contact form on our website or by calling our customer service number listed on the contact page.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="w-full md:w-1/2 px-4 mb-8 flex items-center">
+        <div class="flex-shrink-0 w-1/3">
+          <img src="https://img.icons8.com/ios-filled/50/115e59/price-tag.png" alt="Pricing Icon" class="w-24 h-24 mx-auto">
+        </div>
+        <div class="w-2/3 pl-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-dollar-sign text-2xl text-[#B59F65] mr-3"></i>
+              <h3 class="text-xl font-semibold text-[#115e59]">What are the fees for your services?</h3>
+            </div>
+            <p class="text-gray-600">Our fees vary depending on the type of legal service required. For detailed information on pricing, please reach out to us directly through the contact form or phone number provided.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="w-full md:w-1/2 px-4 mb-8 flex items-center">
+        <div class="flex-shrink-0 w-1/3">
+          <img src="https://img.icons8.com/ios-filled/50/115e59/contract.png" alt="Contract Icon" class="w-24 h-24 mx-auto">
+        </div>
+        <div class="w-2/3 pl-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-file-contract text-2xl text-[#B59F65] mr-3"></i>
+              <h3 class="text-xl font-semibold text-[#115e59]">How do I schedule a consultation?</h3>
+            </div>
+            <p class="text-gray-600">To schedule a consultation, you can use the contact form on our website, call us directly, or email us. We will get back to you with available times and further instructions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-------------------------------------- FAQ Section ---------------------------------------->
+<section class="bg-gray-100 py-16" id="faqs">
+  <div class="container mx-auto px-6 md:px-12">
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h2>
+      <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Find answers to the most common questions we receive.</p>
+    </div>
+  
+    <!-- FAQs -->
+    <div class="space-y-8">
+      <!-- FAQ Item 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <button class="flex items-center justify-between w-full text-left text-lg font-semibold text-[#115e59] focus:outline-none">
+          <span>What types of cases do you handle?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-transform transform rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mt-4 text-gray-600 hidden">
+          <p>We handle a variety of legal cases including criminal defense, family law, personal injury, and more. Our team is equipped to manage a broad spectrum of legal challenges.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <button class="flex items-center justify-between w-full text-left text-lg font-semibold text-[#115e59] focus:outline-none">
+          <span>How can I schedule a consultation?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-transform transform rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mt-4 text-gray-600 hidden">
+          <p>You can schedule a consultation by contacting us through our website's contact form or by calling our office directly. Our team will assist you in setting up a convenient appointment.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <button class="flex items-center justify-between w-full text-left text-lg font-semibold text-[#115e59] focus:outline-none">
+          <span>What should I bring to my consultation?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-transform transform rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mt-4 text-gray-600 hidden">
+          <p>For your consultation, please bring any relevant documents related to your case, including contracts, police reports, or previous correspondence. This will help us better understand your situation.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <button class="flex items-center justify-between w-full text-left text-lg font-semibold text-[#115e59] focus:outline-none">
+          <span>What are your fees?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-transform transform rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mt-4 text-gray-600 hidden">
+          <p>Our fees vary depending on the type of case and the complexity involved. We offer transparent pricing and will provide you with a detailed fee structure during your initial consultation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+ <!--------------------------------------------- footer section --------------------------->
+
+<footer class="bg-[#152527] text-white">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 p-8">
+    <!-- Company Logo and Social Links -->
+    <div>
+      <a href="index.html"><img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="Company Logo" class="mb-4 transform transition hover:scale-105 duration-300"></a>
+      <p class="text-sm mb-4">Your Company is committed to delivering the best products and services.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Useful Links</h2>
+      <ul class="space-y-2">
+        <li><a href="about.html" class="hover:text-[#B59F65]">About</a></li>
+        <li><a href="services.html" class="hover:text-[#B59F65]">Services</a></li>
+        <li><a href="team.html" class="hover:text-[#B59F65]">Team</a></li>
+        <li><a href="faqs.html" class="hover:text-[#B59F65]">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Office Info -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Office Info</h2>
+      <ul class="space-y-2">
+        <p class="text-sm hover:text-[#B59F65]">1234 Street Name, City, Country</p>
+        <p class="text-sm hover:text-[#B59F65]">Phone: (123) 456-7890</p>
+        <p class="text-sm hover:text-[#B59F65]">Email: info@yourcompany.com</p>
+      </ul>
+    </div>
+
+    <!-- Subscribe Now -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Subscribe Now</h2>
+      <form>
+        <input type="email" class="w-full p-2 rounded bg-gray-700 text-white mb-2" placeholder="Enter your email">
+        <button type="submit" class="w-full bg-gradient-to-r from-[#B59F65] to-[#D4C190] hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-110 text-white py-2 rounded">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <hr class="mx-12">
+  <div class="mt-8 text-center text-sm text-gray-400 pb-4">
+    &copy; 2024 Your Company. All rights reserved.
+  </div>
+</footer>
+  
+
+<script src="app.js"></script>
+<!-- Include JavaScript for FAQ Interaction -->
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector('svg');
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

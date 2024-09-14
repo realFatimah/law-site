@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+  }
+   
+  
+  .active {
+    border-bottom: 2px solid #B59F65; /* Active link color */
+}
+  
+  
+  footer {
+    background: 
+      linear-gradient(#152527, rgba(21, 37, 39, 0.9)), /* Semi-transparent overlay */
+      url('https://img.freepik.com/free-photo/grey-marble-column-details-building_1359-886.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid') no-repeat center center; /* Your background image */
+    background-size: cover; /* Cover the entire footer */
+    color: rgb(103, 95, 95); /* Text color */
+  }
+
+  bg-gradient-to-b from-[#17625D] to-[#152527]
+
+  /********************************* services.html file  **************************************************/
+  

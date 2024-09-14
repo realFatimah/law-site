@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junk</title>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="./assets/Screenshot 2024-09-09 231114.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <style>
+    html {
+    scroll-behavior: smooth;
+  }
+   
+  
+  /* Add this to your CSS file */
+  .nav-link-active {
+    border-bottom: 2px solid #B59F65; /* Adjust the color and thickness as needed */
+    padding-bottom: 2px; /* Adjust to match the thickness */
+  }
+  footer {
+    background: 
+      linear-gradient(#152527, rgba(21, 37, 39, 0.9)), ;
+      /* url('https://img.freepik.com/free-photo/grey-marble-column-details-building_1359-886.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid') no-repeat center center; Your background image */
+    background-size: cover; /* Cover the entire footer */
+    color: rgb(103, 95, 95); /* Text color */
+  }
+  </style>
+</head>
+<body class="">
+<nav class="bg-[#152527] p-4 sticky top-0 z-50 shadow-2xl" id="home">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-white text-2xl font-bold transform transition hover:scale-105 duration-300">
+        <img src="data:image/png;base64,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" class="" alt="">
+      </a>
+  
+      <!-- Desktop Menu (centered) -->
+      <div class="hidden md:flex flex-1 justify-center space-x-8 mr-8">
+        <a href="#home" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+        <a href="#about" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+        <a href="#services" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+        <a href="#team" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+        <a href="#faqs" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+      </div>
+  
+      <!-- Gradient Button -->
+      <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 mr-8 transform transition hover:scale-105 duration-300">
+        Contact
+      </a>
+  
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div class="flex flex-col space-y-2 mt-2">
+        <a href="#" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+        <a href="#about" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+        <a href="#services" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+        <a href="#contact" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+ <!-- -------------------------- Hero Banner --------------------------------->  
+<section class="h-[60vh] flex items-center justify-center relative bg-cover bg-center" id="services" style="background-image: url('https://velikorodnov.com/html/hicks-and-hynson/images/608x420_img1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white">
+        <h1 class="text-4xl font-bold sm:text-7xl mb-8 text-[#D4C190]" data-aos="fade-up" data-aos-duration="1000">Services</h1>
+
+        <!-- Gradient Button -->
+        <a href="#" class="md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Free Consultation
+        </a>
+    </div>
+    <!-- Service Section -->
+    <div class="absolute top-[50%] left-0 w-full px-4 py-8 bg-[#4B5257] bg-opacity-80">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap mx-16">
+                <!-- Service Item 1 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/phone-office.png" class="w-16 h-16" alt="Appointment Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">Book Your</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Appointment</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/coins.png" class="w-16 h-16" alt="Expert Advice Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">Get Free</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Expert Advice</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/contract.png" class="w-16 h-16" alt="Join Team Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">You Can Easily</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Join Our Team</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- -------------------------- Hero Banner --------------------------------->  
+ <section class="h-[60vh] flex items-center justify-center relative bg-cover bg-center" id="services" style="background-image: url('https://html.designingmedia.com/counsel-law/images/resource/cta.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 "></div>
+    <div class="relative z-10 text-center text-white  ">
+        <h1 class="text-4xl font-bold sm:text-7xl mb-8 text-[#D4C190]" data-aos="fade-up" data-aos-duration="1000">Services</h1>
+  
+        <!-- Gradient Button -->
+        <a href="#" class="md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Free Consultation
+        </a>
+    </div>
+    <!-- Service Section -->
+    <div class="hidden sm:block absolute top-[80%] left-0 w-full  px-4 py-8 bg-[#152527] bg-opacity-90 ">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap mx-16">
+                <!-- Service Item 1 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/phone-office.png" class="w-16 h-16" alt="Appointment Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">Book Your</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Appointment</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/coins.png" class="w-16 h-16" alt="Expert Advice Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">Get Free</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Expert Advice</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+                    <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                        <div class="w-1/4 flex-shrink-0">
+                            <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                                <img src="https://img.icons8.com/ios-filled/50/115e59/contract.png" class="w-16 h-16" alt="Join Team Icon">
+                            </div>
+                        </div>
+                        <div class="w-3/4 ml-4">
+                            <span class="text-[#115E59] block font-medium">You Can Easily</span>
+                            <h3 class="text-lg font-semibold text-[#115E59]">Join Our Team</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+ 
+
+     <!-------------------------------------- stats section serious ---------------------------------------- -->
+
+  <section class="bg-[#152527] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <!-- Section Heading -->
+      <h2 class="text-3xl md:text-5xl font-bold text-[#D4C190]" data-aos="fade-up" data-aos-duration="1000">Our Achievements</h2>
+      <p class="mt-4 text-gray-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">We're proud of what we've accomplished together</p>
+  
+      <!-- Statistics Section with Real Icons -->
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-12">
+        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <i class="fas fa-gavel text-6xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-5xl font-extrabold text-[#D4C190]">500+</h3>
+          <p class="mt-2 text-gray-300">Cases Won</p>
+        </div>
+        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <i class="fas fa-users text-6xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-5xl font-extrabold text-[#D4C190]">1000+</h3>
+          <p class="mt-2 text-gray-300">Happy Clients</p>
+        </div>
+        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <i class="fas fa-award text-6xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-5xl font-extrabold text-[#D4C190]">50</h3>
+          <p class="mt-2 text-gray-300">Years of Experience</p>
+        </div>
+        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <i class="fas fa-balance-scale text-6xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-5xl font-extrabold text-[#D4C190]">20</h3>
+          <p class="mt-2 text-gray-300">Top Attorneys</p>
+        </div>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <a href="#contact" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#152527] font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300">
+          Contact Us Today
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+
+ <!----------------------------- Pricing Section ----------------------------->
+
+  <section class="bg-gray-100 py-16" id="pricing">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Our Pricing Plans</h2>
+        <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose the plan that best suits your needs.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Basic Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <svg class="w-6 h-6 text-yellow-400 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8.707l3.95 3.95a1.25 1.25 0 001.768-1.768L12 5.175 7.282 10.89a1.25 1.25 0 001.768 1.768L12 8.707z"></path>
+            </svg> Basic Package
+          </h3>
+          <p class="text-gray-600 mb-4">Basic features to get you started.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$99/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 1</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 2</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 3</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+        <!-- Standard Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <svg class="w-6 h-6 text-yellow-400 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8.707l3.95 3.95a1.25 1.25 0 001.768-1.768L12 5.175 7.282 10.89a1.25 1.25 0 001.768 1.768L12 8.707z"></path>
+            </svg> Standard Package
+          </h3>
+          <p class="text-gray-600 mb-4">Includes everything in the Basic Package plus more.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$199/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 1</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 2</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 3</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 4</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+        <!-- Premium Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <svg class="w-6 h-6 text-yellow-400 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8.707l3.95 3.95a1.25 1.25 0 001.768-1.768L12 5.175 7.282 10.89a1.25 1.25 0 001.768 1.768L12 8.707z"></path>
+            </svg> Premium Package
+          </h3>
+          <p class="text-gray-600 mb-4">All features included for comprehensive support.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$299/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 1</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 2</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 3</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 4</li>
+            <li class="mb-2"><svg class="w-4 h-4 text-green-500 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg> Feature 5</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-gray-100 py-16" id="pricing">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Our Pricing Plans</h2>
+        <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose the plan that best suits your needs.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Basic Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <i class="fas fa-star text-yellow-400 mr-2"></i> Basic Package
+          </h3>
+          <p class="text-gray-600 mb-4">Basic features to get you started.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$99/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 1</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 2</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 3</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+        <!-- Standard Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <i class="fas fa-star-half-alt text-yellow-400 mr-2"></i> Standard Package
+          </h3>
+          <p class="text-gray-600 mb-4">Includes everything in the Basic Package plus more.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$199/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 1</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 2</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 3</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 4</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+        <!-- Premium Package -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-semibold text-[#115e59] mb-4">
+            <i class="fas fa-trophy text-yellow-400 mr-2"></i> Premium Package
+          </h3>
+          <p class="text-gray-600 mb-4">All features included for comprehensive support.</p>
+          <p class="text-2xl font-bold text-[#115e59] mb-4">$299/month</p>
+          <ul class="text-left mb-6">
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 1</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 2</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 3</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 4</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Feature 5</li>
+          </ul>
+          <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="bg-gray-100 py-16" id="pricing">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Our Pricing Plans</h2>
+            <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose the plan that best suits your needs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Basic Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Basic Package</h3>
+                <p class="text-gray-600 mb-4">Basic features to get you started.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$99/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 1</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 2</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 3</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Standard Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Standard Package</h3>
+                <p class="text-gray-600 mb-4">Includes everything in the Basic Package plus more.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$199/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 1</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 2</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 3</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 4</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Premium Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Premium Package</h3>
+                <p class="text-gray-600 mb-4">All features included for comprehensive support.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$299/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 1</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 2</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 3</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 4</li>
+                    <li class="mb-2 flex items-center"><svg class="w-5 h-5 text-[#B59F65] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature 5</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-gray-100 py-16" id="pricing">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Our Pricing Plans</h2>
+            <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose the plan that best suits your needs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Basic Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Basic Package</h3>
+                <p class="text-gray-600 mb-4">Basic features to get you started.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$99/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Standard Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Standard Package</h3>
+                <p class="text-gray-600 mb-4">Includes everything in the Basic Package plus more.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$199/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 4</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Premium Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Premium Package</h3>
+                <p class="text-gray-600 mb-4">All features included for comprehensive support.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$299/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 4</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 5</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-100 py-16 relative" id="pricing">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#115e59]" data-aos="fade-up" data-aos-duration="1000">Our Pricing Plans</h2>
+            <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose the plan that best suits your needs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Basic Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Basic Package</h3>
+                <p class="text-gray-600 mb-4">Basic features to get you started.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$99/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Standard Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Standard Package</h3>
+                <p class="text-gray-600 mb-4">Includes everything in the Basic Package plus more.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$199/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 4</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <!-- Premium Package -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-[#115e59] mb-4">Premium Package</h3>
+                <p class="text-gray-600 mb-4">All features included for comprehensive support.</p>
+                <p class="text-2xl font-bold text-[#115e59] mb-4">$299/month</p>
+                <ul class="text-left mb-6">
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 1</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 2</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 3</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 4</li>
+                    <li class="mb-2 flex items-center"><i class="fas fa-check-circle text-[#B59F65] mr-2"></i>Feature 5</li>
+                </ul>
+                <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <!-- Icon or Image at the Bottom Right -->
+        <div class="absolute bottom-8 right-8">
+            <i class="fas fa-cog h-32 w-32" style="color: #105d59;  "></i>
+        </div>
+    </div>
+</section>
+
+
+     <!--------------------------------------Stats section funny ---------------------------------------- -->
+
+  <section class="bg-[#152527] text-white py-16 overflow-hidden mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-[#D4C190] mb-12">Our Achievements</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Achievement 1 -->
+        <div class="group">
+          <div class="bg-[#1D3436] rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 hover:rotate-3 hover:bg-[#B59F65] cursor-pointer">
+            <div class="text-6xl mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">⚖️</div>
+            <h3 class="text-3xl font-bold text-[#D4C190] mb-2 group-hover:text-[#152527]">500+</h3>
+            <p class="text-xl font-semibold mb-2 group-hover:text-[#152527]">Cases Won</p>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Successfully resolved cases in favor of our clients</p>
+          </div>
+        </div>
+  
+        <!-- Achievement 2 -->
+        <div class="group">
+          <div class="bg-[#1D3436] rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 hover:rotate-3 hover:bg-[#B59F65] cursor-pointer">
+            <div class="text-6xl mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">😊</div>
+            <h3 class="text-3xl font-bold text-[#D4C190] mb-2 group-hover:text-[#152527]">1000+</h3>
+            <p class="text-xl font-semibold mb-2 group-hover:text-[#152527]">Happy Clients</p>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Satisfied clients who trust our expertise</p>
+          </div>
+        </div>
+  
+        <!-- Achievement 3 -->
+        <div class="group">
+          <div class="bg-[#1D3436] rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 hover:rotate-3 hover:bg-[#B59F65] cursor-pointer">
+            <div class="text-6xl mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">🏆</div>
+            <h3 class="text-3xl font-bold text-[#D4C190] mb-2 group-hover:text-[#152527]">50</h3>
+            <p class="text-xl font-semibold mb-2 group-hover:text-[#152527]">Years of Experience</p>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Decades of combined legal experience</p>
+          </div>
+        </div>
+  
+        <!-- Achievement 4 -->
+        <div class="group">
+          <div class="bg-[#1D3436] rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 hover:rotate-3 hover:bg-[#B59F65] cursor-pointer">
+            <div class="text-6xl mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">👥</div>
+            <h3 class="text-3xl font-bold text-[#D4C190] mb-2 group-hover:text-[#152527]">20</h3>
+            <p class="text-xl font-semibold mb-2 group-hover:text-[#152527]">Top Attorneys</p>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Highly skilled lawyers on our team</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="mt-12 text-center">
+        <a href="#contact" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#152527] font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300">
+          Discover Our Expertise
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <div class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+            <!-- Service Item 1 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start">
+                    <div class="w-1/4 flex-shrink-0">
+                        <div class="bg-blue-500 p-4 rounded-full flex items-center justify-center">
+                            <i class="fi flaticon-lawyer text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="w-3/4 ml-4">
+                        <span class="text-gray-500 block">Book Your</span>
+                        <h3 class="text-lg font-semibold text-gray-900">Appointment</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start">
+                    <div class="w-1/4 flex-shrink-0">
+                        <div class="bg-green-500 p-4 rounded-full flex items-center justify-center">
+                            <i class="fi flaticon-scale text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="w-3/4 ml-4">
+                        <span class="text-gray-500 block">Get Free</span>
+                        <h3 class="text-lg font-semibold text-gray-900">Expert Advice</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start">
+                    <div class="w-1/4 flex-shrink-0">
+                        <div class="bg-red-500 p-4 rounded-full flex items-center justify-center">
+                            <i class="fi flaticon-network text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="w-3/4 ml-4">
+                        <span class="text-gray-500 block">You Can Easily</span>
+                        <h3 class="text-lg font-semibold text-gray-900">Join Our Team</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------------------------------- footer section --------------------------->
+<footer class="bg-[#152527] text-white ">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 p-8">
+      <!-- Company Logo and Social Links -->
+      <div>
+        <img src="http://afensor.like-themes.com/wp-content/uploads/2023/04/logo_1x_white.png" alt="Company Logo" class="mb-4 transform transition hover:scale-105 duration-300">
+        <p class="text-sm mb-4">Your Company is committed to delivering the best products and services.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-[#B59F65]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="hover:text-[#B59F65]">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="hover:text-[#B59F65]">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="hover:text-[#B59F65]">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Useful Links -->
+      <div>
+        <h2 class="text-lg font-bold mb-4">Useful Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-[#B59F65]">About</a></li>
+          <li><a href="#services" class="hover:text-[#B59F65]">Services</a></li>
+          <li><a href="#team" class="hover:text-[#B59F65]">Team</a></li>
+          <li><a href="#faqs" class="hover:text-[#B59F65]">FAQs</a></li>
+        </ul>
+      </div>
+  
+      <!-- Office Info -->
+      <div>
+        <h2 class="text-lg font-bold mb-4">Office Info</h2>
+        <ul class="space-y-2">
+          <p class="text-sm hover:text-[#B59F65]">1234 Street Name, City, Country</p>
+          <p class="text-sm hover:text-[#B59F65]">Phone: (123) 456-7890</p>
+          <p class="text-sm hover:text-[#B59F65]">Email: info@yourcompany.com</p>
+        </ul>
+      </div>
+  
+      <!-- Subscribe Now -->
+      <div>
+        <h2 class="text-lg font-bold mb-4">Subscribe Now</h2>
+        <form>
+          <input type="email" class="w-full p-2 rounded bg-gray-700 text-white mb-2" placeholder="Enter your email">
+          <button type="submit" class="w-full bg-gradient-to-r from-[#B59F65] to-[#D4C190] hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-110 text-white py-2 rounded">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class="mx-12">
+    <div class="mt-8 text-center text-sm text-gray-400 pb-4">
+      &copy; 2024 Your Company. All rights reserved.
+    </div>
+  </footer>
+  
+
+<!-- -------------------------- Hero Banner --------------------------------->  
+<section class=" h-[60vh] flex items-center justify-center relative bg-cover bg-center " id="services" style="background-image: url('https://velikorodnov.com/html/hicks-and-hynson/images/608x420_img1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-4xl font-bold sm:text-7xl mb-8 text-[#D4C190]" data-aos="fade-up" data-aos-duration="1000">Services</h1>
+  
+      <!-- Gradient Button -->
+      <a href="#" class="md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+        Free Consultation
+      </a>
+    </div>
+  </section>
+ 
+  <div class="container mx-auto px-4 py-4 bg-gray-200">
+    <div class="flex flex-wrap mx-16">
+        <!-- Service Item 1 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+            <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                <div class="w-1/4 flex-shrink-0">
+                  <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                    <img src="https://img.icons8.com/ios-filled/50/115e59/phone-office.png" class="w-16 h-16" alt="Appointment Icon">
+                    </div>
+                </div>
+                <div class="w-3/4 ml-4">
+                    <span class="text-[#115E59] block font-medium">Book Your</span>
+                    <h3 class="text-lg font-semibold text-[#115E59]">Appointment</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Service Item 2 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+            <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                <div class="w-1/4 flex-shrink-0">
+                    <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                        <img src="https://img.icons8.com/ios-filled/50/115e59/coins.png" class="w-16 h-16" alt="Expert Advice Icon">
+                    </div>
+                </div>
+                <div class="w-3/4 ml-4">
+                    <span class="text-[#115E59] block font-medium">Get Free</span>
+                    <h3 class="text-lg font-semibold text-[#115E59]">Expert Advice</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Service Item 3 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 px-8 mb-8">
+            <div class="bg-white p-2 rounded-lg shadow-lg flex items-start transform transition duration-300 hover:scale-105">
+                <div class="w-1/4 flex-shrink-0">
+                  <div class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] p-2 rounded-lg flex items-center justify-center">
+                    <img src="https://img.icons8.com/ios-filled/50/115e59/contract.png" class="w-16 h-16" alt="Join Team Icon">
+                    </div>
+                </div>
+                <div class="w-3/4 ml-4">
+                    <span class="text-[#115E59] block font-medium">You Can Easily</span>
+                    <h3 class="text-lg font-semibold text-[#115E59]">Join Our Team</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<!----------------------------- Team Members Section ------------------------------->
+<section class="  py-0" id="team">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Meet Our Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Team Member Card -->
+      <div class="bg-[#1F3133] p-6 rounded-lg  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="https://img.freepik.com/premium-photo/young-indian-businesswoman-employee-standing-white-background_1254992-196959.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 2 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25828.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">Jane Smith</h3>
+        <p class="text-[#B59F65]">Legal Consultant</p>
+        <p class="text-white mt-4">Specialist in property law with over 10 years of experience.</p>
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 3 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img src="https://img.freepik.com/free-photo/photorealistic-lawyer-day-celebration_23-2151053984.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Team Member Card 4 -->
+      <div class="bg-[#1F3133] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25849.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-[#B59F65]">Senior Attorney</p>
+        <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+        <!-- Gradient Button -->
+        <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          View Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ----------------------------- Join the Team Section ------------------------------->
+
+
+<section class="py-20 my-12 bg-gradient-to-b from-[#152527] to-[#17625D]" id="join-team">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-white mb-8 text-center" data-aos="fade-up" data-aos-duration="1000">Join Our Team</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000">
+        <p class="text-lg text-gray-300">
+          At our law firm, we're always looking for talented professionals who are passionate about justice and excellence. Join our dynamic team and be part of something great.
+        </p>
+        <ul class="space-y-4 text-gray-300">
+          <li class="flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Challenging and rewarding work environment
+          </li>
+          <li class="flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Opportunities for professional growth and development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Competitive salary and benefits package
+          </li>
+          <li class="flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Collaborative and inclusive work culture
+          </li>
+        </ul>
+        <div class="pt-6">
+          <a href="#careers" class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105 shadow-lg shadow-[#B7A268] inline-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            Explore Careers
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-duration="1000">
+        <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Associates</h3>
+          <p class="text-gray-300">Join our team of skilled associates and work on challenging cases</p>
+        </div>
+        <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Paralegals</h3>
+          <p class="text-gray-300">Support our legal team with your expertise and attention to detail</p>
+        </div>
+        <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Legal Assistants</h3>
+          <p class="text-gray-300">Provide crucial administrative support to our attorneys</p>
+        </div>
+        <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Interns</h3>
+          <p class="text-gray-300">Gain valuable experience in a top-tier law firm environment</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <h3 class="text-2xl font-semibold text-white mb-4">Current Openings</h3>
+      <div class="space-y-4">
+        <a href="#" class="block bg-[#1F3133] text-white p-4 rounded-lg hover:bg-[#17625D] transition duration-300">
+          Senior Corporate Lawyer - New York Office
+        </a>
+        <a href="#" class="block bg-[#1F3133] text-white p-4 rounded-lg hover:bg-[#17625D] transition duration-300">
+          Intellectual Property Associate - San Francisco Office
+        </a>
+        <a href="#" class="block bg-[#1F3133] text-white p-4 rounded-lg hover:bg-[#17625D] transition duration-300">
+          Legal Assistant - Chicago Office
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!----------------------------- team-spotlight Section ------------------------------->
+
+<section class="py-20 bg-[#1F3133]" id="team-spotlight">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up" data-aos-duration="1000">Team Member Spotlight</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+      <div class="w-full md:w-1/3" data-aos="fade-right" data-aos-duration="1000">
+        <img src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-looking-camera_23-2148255245.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Featured Team Member" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
+      </div>
+      <div class="w-full md:w-2/3" data-aos="fade-left" data-aos-duration="1000">
+        <h3 class="text-3xl font-semibold text-[#B59F65] mb-4">Jane Doe</h3>
+        <p class="text-xl text-white mb-4">Senior Partner, Corporate Law</p>
+        <p class="text-gray-300 mb-6">With over 15 years of experience in corporate law, Jane has successfully represented Fortune 500 companies in complex mergers and acquisitions. Her innovative approach to legal challenges has earned her recognition as one of the top corporate lawyers in the country.</p>
+        <div class="space-y-2">
+          <p class="text-white"><strong class="text-[#B59F65]">Notable Case:</strong> Successfully negotiated a $1 billion merger in the tech industry</p>
+          <p class="text-white"><strong class="text-[#B59F65]">Education:</strong> J.D., Harvard Law School</p>
+          <p class="text-white"><strong class="text-[#B59F65]">Awards:</strong> Named "Corporate Lawyer of the Year" by Legal Times (2023)</p>
+        </div>
+        <a href="#" class="mt-8 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+          Full Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<!-- --------------------- Why Choose Us Section ------------------------- -->
+<section class="py-28 relative bg-gray-900 overflow-hidden">
+  <div class="container mx-auto px-6 md:px-12 text-center">
+    <!-- Section Title -->
+    <div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-4xl font-bold text-[#D4C190]">Why Choose Us</h2>
+      <p class="mt-4 text-gray-400">Our firm stands out because of our unique approach, dedication, and unparalleled expertise in the legal industry.</p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Feature 1 -->
+      <div class="p-8 bg-[#F9FAFB] rounded-lg shadow-2xl" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-16 h-16 mb-6 mx-auto text-[#115E59]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+            <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-[#115E59]">Timely Resolutions</h3>
+        <p class="text-gray-600 mt-4">We prioritize quick, efficient resolutions while ensuring top-quality outcomes for all legal matters.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="p-8 bg-[#F9FAFB] rounded-lg shadow-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="w-16 h-16 mb-6 mx-auto text-[#115E59]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2"></path><path d="M12 22v-2"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-[#115E59]">Expert Team</h3>
+        <p class="text-gray-600 mt-4">Our legal experts bring decades of combined experience, making us a trusted name in the field.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="p-8 bg-[#F9FAFB] rounded-lg shadow-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="w-16 h-16 mb-6 mx-auto text-[#115E59]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+            <path d="M2 12l10 7 10-7-10-7-10 7Z"></path><path d="M2 12l10-7 10 7"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-[#115E59]">Client-Centered Approach</h3>
+        <p class="text-gray-600 mt-4">We listen to your needs, provide personalized strategies, and prioritize your best interests in every case.</p>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <a href="#" class="inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+        Learn More About Our Services
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- --------------------- Why Choose Us Section ------------------------- -->
+<section class="py-28 bg-gray-900 overflow-hidden mt-12">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="md:flex md:items-center md:space-x-8">
+      
+      <!-- Text Section -->
+      <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+        <h2 class="text-4xl font-bold text-[#D4C190]">Why Choose Us</h2>
+        <p class="mt-4 text-gray-400">
+          At our firm, we are committed to providing top-notch legal services tailored to our clients' needs. With a proven track record of success, we focus on delivering timely, innovative, and effective solutions that set us apart in the industry.
+        </p>
+        <p class="mt-4 text-gray-400">
+          Here are some reasons why clients continue to trust us for their legal matters.
+        </p>
+      </div>
+      
+      <!-- Icon Section -->
+      <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Row 1 -->
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 1 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Timely Resolutions</h3>
+        </div>
+        
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 2 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Expert Team</h3>
+        </div>
+        
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 3 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <path d="M2 12l10 7 10-7-10-7-10 7Z"></path><path d="M2 12l10-7 10 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Client Focus</h3>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 4 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Collaboration</h3>
+        </div>
+        
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 5 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="m14.5 9-5 5"></path><path d="m9.5 9 5 5"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Security</h3>
+        </div>
+        
+        <div class="flex flex-col items-center bg-[#F9FAFB] p-6 rounded-lg shadow-xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-12 h-12 mb-4 bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white rounded-full flex items-center justify-center">
+            <!-- Icon 6 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+              <path d="M22 12l-10 7L2 12"></path><path d="M22 12l-10-7L2 12"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-[#115E59]">Confidentiality</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Legal Experts</title>
+    <meta name="description" content="Meet our team of experienced legal professionals dedicated to providing expert legal services.">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <header>
+        <nav class="bg-[#152527] p-4 sticky top-0 z-50 shadow-2xl">
+            <!-- Navigation content (unchanged) -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative bg-cover bg-center h-[60vh] flex items-center justify-center" style="background-image: url('https://html.designingmedia.com/counsel-law/images/resource/case-1.jpg');">
+            <!-- Hero section content (unchanged) -->
+        </section>
+
+        <section id="team" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-[#152527] mb-12 text-center" data-aos="fade-up" data-aos-duration="1000">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="https://img.freepik.com/premium-photo/young-indian-businesswoman-employee-standing-white-background_1254992-196959.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Sarah Johnson" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#152527]">Sarah Johnson</h3>
+                            <p class="text-[#B59F65]">Senior Attorney</p>
+                            <p class="text-gray-600 mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+                            <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#152527] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                                View Profile
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add similar blocks for other team members -->
+                </div>
+            </div>
+        </section>
+
+        <section id="join-team" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-[#152527] mb-8 text-center" data-aos="fade-up" data-aos-duration="1000">Join Our Team</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000">
+                        <p class="text-lg text-gray-700">
+                            At our law firm, we're always looking for talented professionals who are passionate about justice and excellence. Join our dynamic team and be part of something great.
+                        </p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Challenging and rewarding work environment
+                            </li>
+                            <!-- Add more list items -->
+                        </ul>
+                        <div class="pt-6">
+                            <a href="#careers" class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#152527] text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105 shadow-lg shadow-[#B7A268] inline-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                Explore Careers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="bg-white p-6 rounded-lg text-center shadow-md">
+                            <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Associates</h3>
+                            <p class="text-gray-600">Join our team of skilled associates and work on challenging cases</p>
+                        </div>
+                        <!-- Add more job role cards -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team-spotlight" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-[#152527] mb-12 text-center" data-aos="fade-up" data-aos-duration="1000">Team Member Spotlight</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="w-full md:w-1/3" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-looking-camera_23-2148255245.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Featured Team Member" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
+                    </div>
+                    <div class="w-full md:w-2/3" data-aos="fade-left" data-aos-duration="1000">
+                        <h3 class="text-3xl font-semibold text-[#B59F65] mb-4">Jane Doe</h3>
+                        <p class="text-xl text-[#152527] mb-4">Senior Partner, Corporate Law</p>
+                        <p class="text-gray-700 mb-6">With over 15 years of experience in corporate law, Jane has successfully represented Fortune 500 companies in complex mergers and acquisitions. Her innovative approach to legal challenges has earned her recognition as one of the top corporate lawyers in the country.</p>
+                        <div class="space-y-2 text-gray-700">
+                            <p><strong class="text-[#B59F65]">Notable Case:</strong> Successfully negotiated a $1 billion merger in the tech industry</p>
+                            <p><strong class="text-[#B59F65]">Education:</strong> J.D., Harvard Law School</p>
+                            <p><strong class="text-[#B59F65]">Awards:</strong> Named "Corporate Lawyer of the Year" by Legal Times (2023)</p>
+                        </div>
+                        <a href="#" class="mt-8 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#152527] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+                            Full Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+  <!------------------------ Contact Information Section -------------------------------> 
+  <section id="contact-info" class="py-12 bg-[#f5f5f5]">
+    <div class="container mx-auto px-6 md:px-12">
+      <!-- <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-[#152527]">Get in Touch</h2>
+        <p class="text-lg text-gray-700 mb-6">We’re here to assist you. Choose the method that suits you best to get in touch with us:</p>
+      </div> -->
+      <div class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 justify-center">
+        <!-- Phone -->
+        <div class="flex-1 text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <i class="fas fa-phone-alt text-4xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2 text-[#152527]">Phone</h3>
+          <p class="text-lg text-gray-800">Call us at <a href="tel:+1234567890" class="text-[#B59F65] font-semibold">(123) 456-7890</a></p>
+        </div>
+        <!-- Email -->
+        <div class="flex-1 text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <i class="fas fa-envelope text-4xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2 text-[#152527]">Email</h3>
+          <p class="text-lg text-gray-800">Send us an email at <a href="mailto:info@yourcompany.com" class="text-[#B59F65] font-semibold">info@yourcompany.com</a></p>
+        </div>
+        <!-- Address -->
+        <div class="flex-1 text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <i class="fas fa-map-marker-alt text-4xl text-[#B59F65] mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2 text-[#152527]">Address</h3>
+          <p class="text-lg text-gray-800">Visit us at 1234 Street Name, City, Country</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!------------------------ Contact Section -------------------------------> 
+<section id="contact-info" class="py-12 bg-[#f5f5f5]">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
+      
+      <!-- Form Column -->
+      <div class="flex-1 bg-white p-4 rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-4 text-center text-[#152527]">Send Us a Message</h3>
+        <form action="#" method="POST">
+          <div class="mb-3">
+            <label for="name" class="block text-sm font-semibold mb-1 text-[#152527]">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-2 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#B59F65] placeholder-gray-500 text-sm" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="block text-sm font-semibold mb-1 text-[#152527]">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-2 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#B59F65] placeholder-gray-500 text-sm" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="block text-sm font-semibold mb-1 text-[#152527]">Message</label>
+            <textarea id="message" name="message" rows="2" class="w-full px-2 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#B59F65] placeholder-gray-500 text-sm" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-sm font-bold px-4 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-105">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Images Column -->
+      <div class="flex-1 space-y-4">
+        <img src="https://via.placeholder.com/400x300" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+        <img src="https://via.placeholder.com/400x300" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+        <img src="https://via.placeholder.com/400x300" alt="Image 3" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!------------------------ Map Section -------------------------------> 
+  <section id="map" class="py-2 bg-white">
+    <div class="container mx-auto px-2 md:px-2">
+      <!-- <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Find Us Here</h2>
+        <p class="text-lg text-gray-700">Check out our location on the map below:</p>
+      </div> -->
+      <div class="relative h-64 md:h-80">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.902178365924!2d-74.00594168459435!3d40.71277617933169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a7d30b5bd1f%3A0x54a5a54c56d4f30!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1633035843950!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+    <footer class="bg-[#152527] text-white">
+        <!-- Footer content (unchanged) -->
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/dist/heroicons.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>

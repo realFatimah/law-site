@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="./assets/Screenshot 2024-09-09 231114.png" type="image/x-icon">
+
+</head>
+<body>
+
+       <!-------------------------------- Navbar --------------------------------->
+
+  <nav class="bg-[#152527] p-4 sticky top-0 z-50 shadow-2xl" id="home">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="text-white text-2xl font-bold transform transition hover:scale-105 duration-300">
+            <img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="">
+        </a>
+
+        <!-- Desktop Menu (centered) -->
+        <div class="hidden md:flex flex-1 justify-center space-x-8 mr-8">
+            <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+            <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+            <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+            <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+            <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+        </div>
+
+        <!-- Gradient Button -->
+        <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-white text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 mr-8 transform hover:scale-105 shadow-md">
+            Contact
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col space-y-2 mt-2">
+            <a href="index.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Home</a>
+            <a href="about.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">About</a>
+            <a href="services.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Services</a>
+            <a href="team.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">Our Team</a>
+            <a href="faqs.html" class="nav-link text-white text-lg hover:text-[#B59F65] px-3 py-2 rounded">FAQs</a>
+        </div>
+    </div>
+</nav>
+ 
+
+
+ <!-- -------------------------- Hero Banner --------------------------------->  
+<section class="h-[60vh] flex items-center justify-center relative bg-cover bg-center" style="background-image: url(' https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-4xl font-bold sm:text-7xl mb-4 " data-aos="fade-up" data-aos-duration="1000">Team</h1>
+      <p class="text-xl mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Professional legal support to ensure justice and fairness</p>
+  
+      <!-- Gradient Button -->
+      <a href="#" class=" md:inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform transition hover:scale-105 duration-300 transition duration-300 mr-8 transform transition hover:scale-105 duration-300 shadow-lg shadow-[#B7A268]"  >
+       Free Consultation
+      </a>
+    </div>
+  </section>
+  
+ 
+<!----------------------------- Team Members Section ------------------------------->
+<section class="  py-0" id="team">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Meet Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  
+        <!-- Team Member Card -->
+        <div class=" bg-gradient-to-b from-[#17625D] to-[#152527] p-6 rounded-lg  " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25828.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-white">John Doe</h3>
+          <p class="text-[#B59F65]">Senior Attorney</p>
+          <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+          <!-- Gradient Button -->
+          <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            View Profile
+          </a>
+        </div>
+  
+        <!-- Team Member Card 2 -->
+        <div class=" bg-gradient-to-b from-[#17625D] to-[#152527] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25828.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-white">Jane Smith</h3>
+          <p class="text-[#B59F65]">Legal Consultant</p>
+          <p class="text-white mt-4">Specialist in property law with over 10 years of experience.</p>
+          <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            View Profile
+          </a>
+        </div>
+  
+        <!-- Team Member Card 3 -->
+        <div class="bg-gradient-to-b from-[#17625D] to-[#152527] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <img src="https://img.freepik.com/free-photo/photorealistic-lawyer-day-celebration_23-2151053984.jpg?ga=GA1.2.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-white">John Doe</h3>
+          <p class="text-[#B59F65]">Senior Attorney</p>
+          <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+          <!-- Gradient Button -->
+          <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            View Profile
+          </a>
+        </div>
+  
+        <!-- Team Member Card 4 -->
+        <div class=" bg-gradient-to-b from-[#17625D] to-[#152527] p-6 rounded-lg hover:scale-105 duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <img src="https://img.freepik.com/premium-photo/photography-professional-lawyer_1288657-25849.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Team Member" class="w-38 h-32 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-white">John Doe</h3>
+          <p class="text-[#B59F65]">Senior Attorney</p>
+          <p class="text-white mt-4">Expert in corporate law and litigation, ensuring justice for every client.</p>
+          <!-- Gradient Button -->
+          <a href="#" class="mt-4 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-sm font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            View Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+<!-- ----------------------------- Join the Team Section ------------------------------->
+
+  <section class="py-20 my-12 bg-cover bg-center relative text-gray-800" id="join-team" style="background-image: url(' https://img.freepik.com/premium-photo/collaborative-workspace-team-members-engaged-productive-team-work_891172-2871.jpg?ga=GA1.1.388251410.1725563448&semt=ais_hybrid');">
+    <div class="absolute inset-0 bg-black opacity-40"></div> <!-- Dark overlay for better text contrast -->
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up" data-aos-duration="1000">Join Our Team</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000">
+          <p class="text-lg text-white">
+            At our law firm, we're always looking for talented professionals who are passionate about justice and excellence. Join our dynamic team and be part of something great.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center text-white">
+              <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Challenging and rewarding work environment
+            </li>
+            <li class="flex items-center text-white">
+              <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Opportunities for professional growth and development
+            </li>
+            <li class="flex items-center text-white">
+              <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Competitive salary and benefits package
+            </li>
+            <li class="flex items-center text-white">
+              <svg class="w-6 h-6 mr-2 text-[#B59F65]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Collaborative and inclusive work culture
+            </li>
+          </ul>
+          <div class="pt-6">
+            <a href="#careers" class="bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-8 py-3 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105 shadow-lg shadow-[#B7A268] inline-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              Explore Careers
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-duration="1000">
+          <div class="bg-gradient-to-b from-[#152527] to-[#17625D] p-6 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Associates</h3>
+            <p class="text-gray-300">Join our team of skilled associates and work on challenging cases</p>
+          </div>
+          <div class="bg-inherit	border border-[#175955] p-6 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Paralegals</h3>
+            <p class="text-gray-100 font-semibold">Support our legal team with your expertise and attention to detail</p>
+          </div>
+          <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Legal Assistants</h3>
+            <p class="text-gray-300">Provide crucial administrative support to our attorneys</p>
+          </div>
+          <div class="bg-[#1F3133] p-6 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-[#B59F65] mb-2">Interns</h3>
+            <p class="text-gray-300">Gain valuable experience in a top-tier law firm environment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!----------------------------- team-spotlight Section ------------------------------->
+<!-- 
+  <section class="py-20 bg-[#1F3133]" id="team-spotlight">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up" data-aos-duration="1000">Team Member Spotlight</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+        <div class="w-full md:w-1/3" data-aos="fade-right" data-aos-duration="1000">
+          <img src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-looking-camera_23-2148255245.jpg?size=626&ext=jpg&ga=GA1.1.388251410.1725563448&semt=ais_hybrid" alt="Featured Team Member" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
+        </div>
+        <div class="w-full md:w-2/3" data-aos="fade-left" data-aos-duration="1000">
+          <h3 class="text-3xl font-semibold text-[#B59F65] mb-4">Jane Doe</h3>
+          <p class="text-xl text-white mb-4">Senior Partner, Corporate Law</p>
+          <p class="text-gray-300 mb-6">With over 15 years of experience in corporate law, Jane has successfully represented Fortune 500 companies in complex mergers and acquisitions. Her innovative approach to legal challenges has earned her recognition as one of the top corporate lawyers in the country.</p>
+          <div class="space-y-2">
+            <p class="text-white"><strong class="text-[#B59F65]">Notable Case:</strong> Successfully negotiated a $1 billion merger in the tech industry</p>
+            <p class="text-white"><strong class="text-[#B59F65]">Education:</strong> J.D., Harvard Law School</p>
+            <p class="text-white"><strong class="text-[#B59F65]">Awards:</strong> Named "Corporate Lawyer of the Year" by Legal Times (2023)</p>
+          </div>
+          <a href="#" class="mt-8 inline-block bg-gradient-to-r from-[#B59F65] to-[#D4C190] text-[#115E59] text-lg font-bold px-6 py-2 rounded-full hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 transform hover:scale-105">
+            Full Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  -->
+
+<!--------------------------------------------- footer section --------------------------->
+
+<footer class="bg-[#152527] text-white">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 p-8">
+    <!-- Company Logo and Social Links -->
+    <div>
+      <a href="index.html"><img src="https://hellloexpert.com/tf/html/barristar-live/assets/images/logo/logo.png" alt="Company Logo" class="mb-4 transform transition hover:scale-105 duration-300"></a>
+      <p class="text-sm mb-4">Your Company is committed to delivering the best products and services.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="hover:text-[#B59F65]">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Useful Links</h2>
+      <ul class="space-y-2">
+        <li><a href="about.html" class="hover:text-[#B59F65]">About</a></li>
+        <li><a href="services.html" class="hover:text-[#B59F65]">Services</a></li>
+        <li><a href="team.html" class="hover:text-[#B59F65]">Team</a></li>
+        <li><a href="faqs.html" class="hover:text-[#B59F65]">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Office Info -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Office Info</h2>
+      <ul class="space-y-2">
+        <p class="text-sm hover:text-[#B59F65]">1234 Street Name, City, Country</p>
+        <p class="text-sm hover:text-[#B59F65]">Phone: (123) 456-7890</p>
+        <p class="text-sm hover:text-[#B59F65]">Email: info@yourcompany.com</p>
+      </ul>
+    </div>
+
+    <!-- Subscribe Now -->
+    <div>
+      <h2 class="text-lg font-bold mb-4">Subscribe Now</h2>
+      <form>
+        <input type="email" class="w-full p-2 rounded bg-gray-700 text-white mb-2" placeholder="Enter your email">
+        <button type="submit" class="w-full bg-gradient-to-r from-[#B59F65] to-[#D4C190] hover:from-[#D4C190] hover:to-[#B59F65] transition duration-300 ease-in-out transform hover:scale-110 text-white py-2 rounded">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <hr class="mx-12">
+  <div class="mt-8 text-center text-sm text-gray-400 pb-4">
+    &copy; 2024 Your Company. All rights reserved.
+  </div>
+</footer>
+  
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
